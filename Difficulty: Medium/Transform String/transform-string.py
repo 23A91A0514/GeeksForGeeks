@@ -5,7 +5,7 @@ class Solution:
             return - 1
         n = len(s1)
         j = n - 1
-        for i in reversed(range(n)):
+        for i in range(n-1,-1,-1):
             if s1[i] == s2[j]:
                 j -= 1
         return j + 1 
